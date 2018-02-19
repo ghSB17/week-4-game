@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="./assets/javascript/game.js"></script>
+    
+    <title>Week-4-Game</title>
+    <style>
+        .styleBtn {
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron border bg-danger text-center">
+        <h1 class="txt-center">Crystal Collector</h1>
+        <h4>Click on the crystals to add points to your score and match the number on the screen</h4>
+    </div>
+    <div class="container">
+            <!-- style="padding-left:0%; padding-right:0%" -->
+        <div class="row" style="padding-top:0%" >
+            <div class="p-3 col-lg-3 h4 card bg-primary" style="margin-left:1.5%;padding:3%;">
+                    <p class="card-subtitle">Number to match:</p>
+                    <h4 class="card-subtitle" id="idRandomNumber">00</h4>
+            </div>
+            <div class="col-lg-3 card h4 bg-primary" style="margin-left:1%;padding:1%">
+                <p class="card-subtitle" id="idWins">Wins: 0</p>
+                <p class="card-subtitle" id="idLoss">Loss: 0</p>
+                <p class="card-subtitle" id="idResult"></p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row"> 
+            <div class="col-lg-2">
+                <button class="crystal" data-crystal-number="1">
+                    <img src="./assets/images/crystal1.png" alt="crystal_1">
+                </button>
+            </div>
+            <div class="col-lg-2">
+                <button class="crystal" data-crystal-number="2">
+                    <img src="./assets/images/crystal2.png" alt="crystal_2">
+                </button>
+            </div>
+        <!-- <div class="col-lg-1" ></div> -->
+            <div class="col-lg-2">
+                <button class="crystal" data-crystal-number="3">
+                    <img src="./assets/images/crystal3.png" alt="crystal_3">
+                </button>
+            </div>
+        <!-- <div class="col-lg-1" ></div> -->
+            <div class="col-lg-2">
+                <button class="crystal" data-crystal-number="4">
+                    <img src="./assets/images/crystal4.png " alt="crystal_4">
+                </button>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    
+    <div class="card bg-success rounded" style="width:15%; margin-left:8%; padding:1%; margin-bottom:10%">
+      <div class="card-body">
+        <p class="card-title h4"> Your Total Score:</p>
+        <p class="card-subtitle" id="idScore" style="width:4%"> 0 </p>
+      </div>
+    </div>
+
+</body>
+</html>
